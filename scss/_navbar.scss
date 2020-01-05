@@ -1,0 +1,36 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    background: rgba($light-color, 0.7);
+    height: 40px;
+    justify-content: center;
+    border-bottom: 2px solid $sapienza-color;
+  
+    ul {
+      display: flex;
+      list-style: none;
+      max-width: 100px;
+      width: 15%;
+      justify-content: center;
+  
+      li {
+        margin: 0;
+        padding: 0.4rem;
+  
+        a {
+          text-transform: uppercase;
+          color: $dark-color;
+          font-weight: 500;
+          @include easeOut;
+  
+          &:hover {
+            color: $exciting-color;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
