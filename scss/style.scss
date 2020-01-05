@@ -1,4 +1,6 @@
-$sapienza-color: #822433;
+@import "config";
+// Landing Page
+@import "landing_page";
 
 * {
   box-sizing: border-box;
@@ -14,37 +16,6 @@ body {
   line-height: 1.5;
 }
 
-// Landing Page
-.showcase {
-  position: relative;
-  background: url("../img/background.jpg") no-repeat center center/cover;
-  height: 100vh;
-
-  &-dark-overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(#222, 0.7);
-  }
-
-  &-content {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    img {
-      height: 150px;
-      width: 150px;
-    }
-  }
-
-  h1 {
-    font-size: 25px;
-  }
+a {
+  text-decoration: none;
 }

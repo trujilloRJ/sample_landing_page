@@ -1,0 +1,7 @@
+$light-color: #dedede;
+$sapienza-color: #822433;
+$exciting-color: #ff4c4c;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}

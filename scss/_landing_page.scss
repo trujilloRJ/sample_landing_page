@@ -1,0 +1,50 @@
+.showcase {
+  position: relative;
+  background: url("../img/background.jpg") no-repeat center center/cover;
+  height: 100vh;
+  overflow: hidden;
+
+  &-dark-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba($light-color, 0.6);
+  }
+
+  &-content {
+    color: $sapienza-color;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      height: 150px;
+      width: 150px;
+    }
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .icons-bar {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+
+    .fab {
+      color: $sapienza-color;
+      padding: 0rem 0.7rem;
+
+      @include easeOut;
+      &:hover {
+        color: $exciting-color;
+      }
+    }
+  }
+}
